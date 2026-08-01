@@ -1,0 +1,9 @@
+# Raw/unprocessed source images (processed versions live in assets/images)
+Me5.JPG
+lab-logo.png
+
+# OS
+.DS_Store
+
+# Local tooling config
+.claude/

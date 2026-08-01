@@ -464,6 +464,17 @@ section.tight { padding: 52px 0; }
 .pi-card__name { font-size: 1.7rem; margin-bottom: 2px; }
 .pi-card__role { font-weight: 600; color: var(--mocha-deep); margin-bottom: 14px; }
 
+.collab-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  border: 1px solid rgba(122, 87, 56, 0.1);
+}
+
+.collab-card h3 { font-size: 1.25rem; margin-bottom: 2px; }
+.collab-card .role { font-weight: 600; color: var(--mocha-deep); margin-bottom: 14px; }
+.collab-card p:last-of-type { margin-bottom: 18px; }
+
 .pi-card__status {
   display: inline-flex;
   align-items: center;

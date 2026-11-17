@@ -318,8 +318,11 @@ h3 { font-size: 1.4rem; line-height: 1.2; }
   display: grid;
   grid-template-columns: minmax(0, 7.2fr) minmax(0, 4fr);
   gap: clamp(36px, 6vw, 88px);
-  align-items: end;
+  align-items: start;
 }
+/* Sit "Latest" level with the headline instead of floating at the bottom
+   of the column, which left the top-right quarter of the hero empty. */
+@media (min-width: 1021px) { .hero__grid > .latest { margin-top: 42px; } }
 
 .hero h1 { max-width: 17ch; margin-bottom: 28px; }
 .hero h1 em { font-style: italic; font-weight: 400; }
@@ -489,6 +492,9 @@ h3 { font-size: 1.4rem; line-height: 1.2; }
 
 .demo__bars { opacity: 0; transition: opacity 0.6s ease; }
 .demo__bars.is-shown { opacity: 1; }
+/* Placeholder for the empty lower third of the stage until the bars appear */
+.demo__hint { transition: opacity 0.4s ease; }
+.demo__bars.is-shown + .demo__hint { opacity: 0; }
 #demo-b { transition: r 0.5s ease; }
 
 .demo__controls label { display: block; font-size: 1.05rem; color: var(--on-dark); }

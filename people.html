@@ -1,6 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MG2B65ZRT3"></script>
 <script>
@@ -10,136 +12,190 @@
 
   gtag('config', 'G-MG2B65ZRT3');
 </script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.replace('no-js', 'js');</script>
 <title>People — MOCHA Lab</title>
-<meta name="description" content="Meet the people behind the MOCHA Lab at Furman University, led by Dr. Saugat Pandey.">
+<meta name="description" content="Meet Dr. Saugat Pandey and the people behind the MOCHA Lab at Furman University.">
+<link rel="canonical" href="https://themochalab.github.io/people.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MOCHA Lab">
+<meta property="og:title" content="People — MOCHA Lab">
+<meta property="og:description" content="Meet Dr. Saugat Pandey and the people behind the MOCHA Lab at Furman University.">
+<meta property="og:url" content="https://themochalab.github.io/people.html">
+<meta property="og:image" content="https://themochalab.github.io/assets/images/mocha-logo.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#F7F2EA">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;family=Instrument+Sans:wght@400..700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<header class="navbar">
-  <div class="container">
-    <div class="brand">
-      <img src="assets/images/mocha-logo.png" class="brand__mark" alt="MOCHA Lab logo">
-      <span class="brand__text">
-        <a href="index.html" class="brand__name">MOCHA Lab</a>
-        <a href="https://www.furman.edu/" target="_blank" rel="noopener" class="brand__furman">@ Furman</a>
-      </span>
-    </div>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/images/mocha-logo.png" alt="" width="30" height="43">
+      <span><span class="brand__name">MOCHA Lab</span><span class="brand__sub">Furman University</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
-    <nav class="nav-links">
+    <nav class="nav-links" id="site-nav" aria-label="Primary">
       <a href="index.html">Home</a>
-      <a href="people.html" class="active">People</a>
+      <a href="people.html" aria-current="page">People</a>
       <a href="publications.html">Publications</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="tight">
-    <div class="container">
-      <div class="section-head left reveal">
-        <span class="eyebrow">People</span>
-        <h2>The lab, so far</h2>
-        <p>MOCHA Lab is brand new — right now it's just the PI, with room to grow.</p>
-      </div>
+<main id="main">
 
-      <div class="pi-card reveal">
-        <div class="pi-card__photo">
-          <img src="assets/images/saugat-pandey.jpg" alt="Portrait of Dr. Saugat Pandey" onerror="this.onerror=null;this.src='assets/images/avatar-placeholder.svg';">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="kicker">People</p>
+      <h1>The lab, so far.</h1>
+      <p>MOCHA Lab is brand new. Right now it's just the PI, with plenty of room to grow.</p>
+    </div>
+  </header>
+
+  <!-- PI -->
+  <section class="section" aria-labelledby="pi-h">
+    <div class="wrap profile">
+      <figure class="profile__photo">
+        <img src="assets/images/saugat-pandey.jpg" alt="Portrait of Dr. Saugat Pandey" width="900" height="675" onerror="this.onerror=null;this.src='assets/images/avatar-placeholder.svg';">
+      </figure>
+
+      <div>
+        <p class="kicker">Principal Investigator</p>
+        <h2 id="pi-h">Dr. Saugat Pandey</h2>
+        <p class="profile__role">Assistant Professor of Computer Science, Furman University</p>
+        <p class="status"><span class="status__dot" aria-hidden="true"></span>Recruiting students now</p>
+
+        <div class="profile__bio">
+          <p>Saugat's research sits at the intersection of data visualization, perception, and AI: measuring how people read charts, how much they trust what they see, and how humans and AI systems can reason about visual data together.</p>
+          <p>He earned his PhD from Washington University in St. Louis at the <a class="link" href="https://visualdata.wustl.edu/" target="_blank" rel="noopener">VIBE Lab</a> (Visual Interface and Behavior Exploration Lab), under the supervision of <a class="link" href="https://alvitta.com/" target="_blank" rel="noopener">Dr. Alvitta Ottley</a>. Most recently, he joined <a class="link" href="index.html#news">WSPA 7News</a> to talk about consumer AI agents and the privacy questions they raise.</p>
         </div>
+
+        <ul class="interests" aria-label="Research interests">
+          <li>Visualization literacy</li>
+          <li>Trust in visualization</li>
+          <li>Human-AI teaming</li>
+          <li>Vision-language models</li>
+          <li>AI-generated image detection</li>
+          <li>Accessibility</li>
+        </ul>
+
+        <div class="profile__links">
+          <a href="https://iamsaugatpandey.github.io/" target="_blank" rel="noopener">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.5 2.7 3.8 6 3.8 9.5s-1.3 6.8-3.8 9.5c-2.5-2.7-3.8-6-3.8-9.5S9.5 5.2 12 2.5Z"/></svg>
+            Portfolio
+          </a>
+          <a href="https://scholar.google.com/citations?user=RCC_DfYAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8 12 3l10 5-10 5L2 8Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5M22 8v6"/></svg>
+            Google Scholar
+          </a>
+          <a href="https://github.com/iamsaugatpandey" target="_blank" rel="noopener">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2Z"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:spandey2@furman.edu">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+            Email
+          </a>
+          <a href="https://calendly.com/mangosaugat/meeting-with-dr-saugat-pandey" target="_blank" rel="noopener">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            Book a 1:1
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLABORATORS -->
+  <section class="section section--tight" aria-labelledby="collab-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="sec-label"><b>01</b>Collaborators</p>
+        <div class="sec-head__body">
+          <h2 id="collab-h">Working together right now</h2>
+        </div>
+      </header>
+      <div class="collab">
+        <img src="assets/images/rachel-carroll.jpg" alt="Portrait of Dr. Rachel Carroll" width="640" height="800" loading="lazy">
         <div>
-          <h3 class="pi-card__name">Dr. Saugat Pandey</h3>
-          <p class="pi-card__role">Principal Investigator · Assistant Professor, Computer Science</p>
-          <span class="pi-card__status"><span class="dot"></span> Starting at Furman — Fall 2026</span>
-          <p>Saugat's research sits at the intersection of data visualization, perception, and AI — measuring how people read charts, how much they trust what they see, and how humans and AI systems can reason about visual data together. He earned his PhD from Washington University in St. Louis at the <a href="https://visualdata.wustl.edu/" target="_blank" rel="noopener" style="text-decoration:underline;">VIBE Lab</a> (Visual Interface and Behavior Exploration Lab), under the supervision of <a href="https://alvitta.com/" target="_blank" rel="noopener" style="text-decoration:underline;">Dr. Alvitta Ottley</a>.</p>
-          <div class="pi-card__links">
-            <a class="icon-link" href="https://iamsaugatpandey.github.io/" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.5 2.7 3.8 6 3.8 9.5s-1.3 6.8-3.8 9.5c-2.5-2.7-3.8-6-3.8-9.5S9.5 5.2 12 2.5Z"/></svg>
-              Portfolio
-            </a>
-            <a class="icon-link" href="https://scholar.google.com/citations?user=RCC_DfYAAAAJ&hl=en" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8 12 3l10 5-10 5L2 8Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5M22 8v6"/></svg>
-              Google Scholar
-            </a>
-            <a class="icon-link" href="https://github.com/iamsaugatpandey" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.48 2 2 6.58 2 12.19c0 4.49 2.87 8.3 6.84 9.65.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.19C22 6.58 17.52 2 12 2Z"/></svg>
-              GitHub
-            </a>
-            <a class="icon-link" href="mailto:spandey2@furman.edu">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
-              Email
-            </a>
-            <a class="icon-link" href="https://calendly.com/mangosaugat/meeting-with-dr-saugat-pandey" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><circle cx="8.5" cy="14.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="12" cy="14.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="15.5" cy="14.5" r="1.1" fill="currentColor" stroke="none"/></svg>
-              Schedule a 1:1
-            </a>
+          <h3><a href="https://rachelmcarroll.weebly.com/" target="_blank" rel="noopener">Dr. Rachel Carroll</a></h3>
+          <p>Northwell Health &amp; University of North Carolina Wilmington</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section class="section section--tint" id="join" aria-labelledby="join-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="sec-label"><b>02</b>Join</p>
+        <div class="sec-head__body">
+          <h2 id="join-h">Pull up a chair.</h2>
+          <p>The lab is new, so the first students and collaborators will help shape what it becomes.</p>
+        </div>
+      </header>
+      <div class="join">
+        <div class="join__col">
+          <h3>Furman undergraduates</h3>
+          <p>I'm actively recruiting undergraduate researchers interested in visualization, perception, human-AI interaction, AI/LLMs, and understanding how machines think. Email me with the subject line <code>Interested in brewing together at MOCHA lab</code>.</p>
+          <div class="join__actions">
+            <a class="btn btn--solid" href="mailto:spandey2@furman.edu?subject=Interested%20in%20brewing%20together%20at%20MOCHA%20lab">Email Dr. Pandey <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+        <div class="join__col">
+          <h3>Collaborators</h3>
+          <p>Working on visualization literacy, trust, aesthetics, human-AI teaming, or applications in accessibility, medicine, or environmental science? I'd love to hear from you.</p>
+          <div class="join__actions">
+            <a class="btn btn--line" href="contact.html">Start a conversation</a>
+            <a class="arrow-link" href="https://calendly.com/mangosaugat/meeting-with-dr-saugat-pandey" target="_blank" rel="noopener">Book a 1:1 <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="tight">
-    <div class="container">
-      <div class="section-head left reveal">
-        <span class="eyebrow">Current Collaborator</span>
-        <h2>Working together right now</h2>
-      </div>
-      <div class="collab-card reveal">
-        <div class="collab-card__photo">
-          <img src="assets/images/rachel-carroll.jpg" alt="Portrait of Dr. Rachel Carroll">
-        </div>
-        <h3><a href="https://rachelmcarroll.weebly.com/" target="_blank" rel="noopener">Dr. Rachel Carroll</a></h3>
-        <p class="role">Northwell Health &amp; University of North Carolina Wilmington</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="tight">
-    <div class="container">
-      <div class="section-head left reveal">
-        <span class="eyebrow">Joining the lab</span>
-        <h2>More to come</h2>
-        <p>The roster is just getting started. I'm actively recruiting undergraduate researchers, and always happy to hear from collaborators interested in visualization, perception, human-AI interaction, AI/LLMs, and understanding how machines think.</p>
-      </div>
-      <div class="roster-grid">
-        <div class="ghost-card reveal">
-          <svg class="ghost-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><circle cx="17" cy="9" r="2.6"/><path d="M3 20c0-3.5 2.7-6.2 6-6.2s6 2.7 6 6.2M15.5 20c0-2.6-1-4.8-2.7-6.2 1-.6 2.2-.9 3.2-.9 2.8 0 5 2.2 5 5v2"/></svg>
-          <h4>Undergraduate Researchers</h4>
-          <p>Actively recruiting for Fall 2026. If you're interested in working with me, email me with the subject line "Interested in brewing together at MOCHA lab."</p>
-          <p><a href="mailto:spandey2@furman.edu?subject=Interested%20in%20brewing%20together%20at%20MOCHA%20lab">spandey2@furman.edu</a></p>
-        </div>
-        <div class="ghost-card reveal">
-          <svg class="ghost-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M4.2 6.2l2.8 2.8M17 15l2.8 2.8M3 12h4M17 12h4M4.2 17.8 7 15M17 9l2.8-2.8"/><circle cx="12" cy="12" r="3.2"/></svg>
-          <h4>Collaborators</h4>
-          <p>Faculty and practitioners exploring visualization, AI, or accessibility — let's talk.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 </main>
 
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/images/mocha-logo.png" alt="">
-        MOCHA Lab
+<footer class="site-footer on-dark">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-about">
+        <p class="footer-mark">MOCHA Lab</p>
+        <p>Multi-agent, Observational, Cognitive, Human-AI &amp; Aesthetics Lab.</p>
       </div>
-      <nav class="footer-links">
+      <nav class="footer-col" aria-label="Footer">
+        <p class="footer-h">Explore</p>
         <a href="index.html">Home</a>
         <a href="people.html">People</a>
         <a href="publications.html">Publications</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="footer-col">
+        <p class="footer-h">Connect</p>
+        <a href="mailto:spandey2@furman.edu">spandey2@furman.edu</a>
+        <a href="https://scholar.google.com/citations?user=RCC_DfYAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/iamsaugatpandey" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://calendly.com/mangosaugat/meeting-with-dr-saugat-pandey" target="_blank" rel="noopener">Book a 1:1</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-h">Find us</p>
+        <address>Department of Computer Science<br>Furman University<br>Greenville, SC</address>
+        <a href="https://www.furman.edu/" target="_blank" rel="noopener">furman.edu</a>
+      </div>
     </div>
-    <p class="footer-note">© 2026 MOCHA Lab · Department of Computer Science, Furman University</p>
+    <div class="footer-bottom">
+      <span>© 2026 MOCHA Lab</span>
+      <span>Brewed at Furman University</span>
+    </div>
   </div>
 </footer>
 

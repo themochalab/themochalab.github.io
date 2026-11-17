@@ -1,6 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MG2B65ZRT3"></script>
 <script>
@@ -10,29 +12,38 @@
 
   gtag('config', 'G-MG2B65ZRT3');
 </script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.replace('no-js', 'js');</script>
 <title>MOCHA Lab — Furman University</title>
-<meta name="description" content="MOCHA Lab (Multi-agent, Observational, Cognitive, Human-AI & Aesthetics Lab) at Furman University, directed by Dr. Saugat Pandey. Research on visualization literacy, perception, trust, aesthetics, and human-AI teaming.">
+<meta name="description" content="MOCHA Lab (Multi-agent, Observational, Cognitive, Human-AI &amp; Aesthetics Lab) at Furman University, directed by Dr. Saugat Pandey. Research on visualization literacy, perception, trust, aesthetics, and human-AI teaming.">
+<link rel="canonical" href="https://themochalab.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MOCHA Lab">
+<meta property="og:title" content="MOCHA Lab — Furman University">
+<meta property="og:description" content="How people see, trust, and reason with data, and what changes when AI is in the loop.">
+<meta property="og:url" content="https://themochalab.github.io/">
+<meta property="og:image" content="https://themochalab.github.io/assets/images/mocha-logo.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#F7F2EA">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;family=Instrument+Sans:wght@400..700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<header class="navbar">
-  <div class="container">
-    <div class="brand">
-      <img src="assets/images/mocha-logo.png" class="brand__mark" alt="MOCHA Lab logo">
-      <span class="brand__text">
-        <a href="index.html" class="brand__name">MOCHA Lab</a>
-        <a href="https://www.furman.edu/" target="_blank" rel="noopener" class="brand__furman">@ Furman</a>
-      </span>
-    </div>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/images/mocha-logo.png" alt="" width="30" height="43">
+      <span><span class="brand__name">MOCHA Lab</span><span class="brand__sub">Furman University</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
       <span></span><span></span><span></span>
     </button>
-    <nav class="nav-links">
-      <a href="index.html" class="active">Home</a>
+    <nav class="nav-links" id="site-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
       <a href="people.html">People</a>
       <a href="publications.html">Publications</a>
       <a href="contact.html">Contact</a>
@@ -40,149 +51,295 @@
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="container hero__grid">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap hero__grid">
       <div>
-        <span class="brewing-tag">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M4 8h12v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8Z"/><path d="M16 9.5h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 3.5c-.6.6-.6 1.4 0 2M11.5 3.5c-.6.6-.6 1.4 0 2"/></svg>
-          Something's brewing at Furman
-        </span>
-        <h1>Understanding how people <span class="accent">see</span>, <span class="accent">trust</span>, and <span class="accent">reason</span> with data.</h1>
-        <p class="hero__lede">The MOCHA Lab studies visualization literacy, perception, and cognition — and how those human abilities meet AI. We build multi-agent and human-AI systems, measure trust and aesthetics in data visualization, and take this work into the hands of practitioners, Blind and Low Vision (BLV) communities, clinicians, and scientists.</p>
-        <div class="hero__cta">
-          <a href="people.html" class="btn btn--primary">
-            Meet the lab
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="contact.html" class="btn btn--ghost">Get in touch</a>
-          <a href="https://calendly.com/mangosaugat/meeting-with-dr-saugat-pandey" target="_blank" rel="noopener" class="btn btn--ghost">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><circle cx="8.5" cy="14.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="12" cy="14.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="15.5" cy="14.5" r="1.1" fill="currentColor" stroke="none"/></svg>
-            Schedule a 1:1
-          </a>
+        <p class="kicker">Department of Computer Science · Furman University</p>
+        <h1 id="hero-h">How people <em>see</em>, <em>trust</em>, and <em>reason</em> with data, and what changes when AI is in the loop.</h1>
+        <p class="hero__lede">MOCHA is a new research lab at Furman University. We study visualization literacy, perception, and trust; build human-AI and multi-agent systems; and bring what we learn to the people who rely on data every day, including practitioners, Blind and Low Vision (BLV) communities, clinicians, and scientists.</p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#research">Explore the research <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="arrow-link" href="people.html">Meet the lab <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
+        <p class="hero__venues">Work published at <span>ACM CHI</span> · <span>IEEE VIS</span> · <span>Computer Graphics Forum</span> · <span>Scientific Reports</span></p>
       </div>
-      <div class="hero__logo" aria-hidden="true">
-        <img src="assets/images/mocha-logo.png" alt="">
-      </div>
+
+      <aside class="latest" aria-labelledby="latest-h">
+        <h2 id="latest-h">Latest</h2>
+        <ol>
+          <li>
+            <p class="latest__meta"><time datetime="2026-11-10">Nov 2026</time><span>In the news</span></p>
+            <a class="latest__title" href="#news">On WSPA 7News: consumer AI agents and the privacy questions they raise</a>
+          </li>
+          <li>
+            <p class="latest__meta"><time datetime="2026-11">Nov 2026</time><span class="brewed">Freshly brewed</span></p>
+            <a class="latest__title" href="publications.html#brewing">Déjà VAE: When Do Autoencoder Traces Reveal Generated Images?</a>
+          </li>
+          <li>
+            <p class="latest__meta"><time datetime="2026">2026</time><span class="brewed">Freshly brewed</span></p>
+            <a class="latest__title" href="publications.html#brewing">False-Positive Rates of Detectors of AI-generated Chest Radiographs across Held-out Public Datasets</a>
+          </li>
+        </ol>
+        <p class="latest__more"><a class="arrow-link" href="#news">All news <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+      </aside>
     </div>
   </section>
 
-  <!-- MOCHA BREAKDOWN -->
-  <section>
-    <div class="container">
-      <div class="section-head reveal">
-        <h2>What MOCHA stands for</h2>
-        <p>Five lenses on the same question: how humans and AI systems make sense of visual data together.</p>
-      </div>
-      <div class="mocha-grid">
-        <div class="mocha-card reveal">
-          <svg class="mocha-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="12" cy="12" r="2.4"/><circle cx="6" cy="19" r="2.2"/><circle cx="18" cy="19" r="2.2"/><path d="M6.9 7.6 10 10.3M17.1 7.6 14 10.3M10.4 14 7.6 17.3M13.6 14l2.8 3.3"/></svg>
-          <span class="mocha-card__letter">M</span>
-          <h4>Multi-agent</h4>
-          <p>How AI agents, models, and humans coordinate and reason together over visual data.</p>
+  <!-- THE NAME -->
+  <section class="section section--tint section--tight" aria-labelledby="name-h">
+    <div class="wrap">
+      <h2 id="name-h" class="kicker">What MOCHA stands for</h2>
+      <dl class="acronym">
+        <div>
+          <dt><span class="letter" aria-hidden="true">M</span>Multi-agent</dt>
+          <dd>How AI agents, models, and people coordinate and reason together over visual data.</dd>
         </div>
-        <div class="mocha-card reveal">
-          <svg class="mocha-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 12S5 5 12 5s10.5 7 10.5 7-3.5 7-10.5 7S1.5 12 1.5 12Z"/><circle cx="12" cy="12" r="3.2"/></svg>
-          <span class="mocha-card__letter">O</span>
-          <h4>Observational</h4>
-          <p>Eye-tracking and behavioral studies of how people actually look at and scan visualizations.</p>
+        <div>
+          <dt><span class="letter" aria-hidden="true">O</span>Observational</dt>
+          <dd>Eye-tracking and behavioral studies of how people actually look at and scan visualizations.</dd>
         </div>
-        <div class="mocha-card reveal">
-          <svg class="mocha-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3.5c-1.8 0-3 1.3-3 2.9 0 .4.1.8.2 1.1C5.3 8 4.5 9.3 4.5 10.8c0 1.1.5 2.1 1.3 2.8-.3.5-.5 1.1-.5 1.8 0 1.9 1.5 3.4 3.4 3.6.2 1.2 1.3 2 2.5 2 1 0 1.8-.6 2.2-1.4"/><path d="M14.5 3.5c1.8 0 3 1.3 3 2.9 0 .4-.1.8-.2 1.1 1.4.5 2.2 1.8 2.2 3.3 0 1.1-.5 2.1-1.3 2.8.3.5.5 1.1.5 1.8 0 1.9-1.5 3.4-3.4 3.6-.2 1.2-1.3 2-2.5 2-1 0-1.8-.6-2.2-1.4"/><path d="M12 4v15"/></svg>
-          <span class="mocha-card__letter">C</span>
-          <h4>Cognitive</h4>
-          <p>The perceptual and cognitive mechanisms behind reading — and misreading — charts.</p>
+        <div>
+          <dt><span class="letter" aria-hidden="true">C</span>Cognitive</dt>
+          <dd>The perceptual and cognitive mechanisms behind reading, and misreading, charts.</dd>
         </div>
-        <div class="mocha-card reveal">
-          <svg class="mocha-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="7" r="3"/><path d="M3 20c0-3 2.2-5.5 5-5.5s5 2.5 5 5.5"/><rect x="14.5" y="13.5" width="7" height="7" rx="1.4"/><path d="M18 13.5v-2M18 22v-1.5M14.5 17H13M23 17h-1.5"/></svg>
-          <span class="mocha-card__letter">H</span>
-          <h4>Human-AI</h4>
-          <p>Trust and collaboration between people and AI/LLM systems in visual analytics.</p>
+        <div>
+          <dt><span class="letter" aria-hidden="true">H</span>Human-AI</dt>
+          <dd>Trust and collaboration between people and AI/LLM systems in visual analytics.</dd>
         </div>
-        <div class="mocha-card reveal">
-          <svg class="mocha-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3C6.5 3 2 6.9 2 12c0 3.3 2.4 5 5 5h1.2c.9 0 1.5.9 1.1 1.7l-.2.5c-.5 1.1.3 2.3 1.5 2.3 5.6 0 11.4-4.4 11.4-10.5C22 6.9 17.5 3 12 3Z"/><circle cx="7.5" cy="10.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="12" cy="7.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="16.5" cy="10.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="15" cy="15" r="1.1" fill="currentColor" stroke="none"/></svg>
-          <span class="mocha-card__letter">A</span>
-          <h4>Aesthetics</h4>
-          <p>How style and design choices shape comprehension, engagement, and trust.</p>
+        <div>
+          <dt><span class="letter" aria-hidden="true">A</span>Aesthetics</dt>
+          <dd>How style and design choices shape comprehension, engagement, and trust.</dd>
         </div>
-      </div>
+      </dl>
     </div>
   </section>
 
-  <!-- WHAT'S BREWING / APPLICATIONS -->
-  <section>
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">What's brewing</span>
-        <h2>Research directions taking shape</h2>
-        <p>From foundational studies of perception and cognition to real-world tools built with the people who'll use them.</p>
-      </div>
-      <div class="research-grid cols-5">
-        <div class="research-card reveal">
-          <svg class="research-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3.5c-1.8 0-3 1.3-3 2.9 0 .4.1.8.2 1.1C5.3 8 4.5 9.3 4.5 10.8c0 1.1.5 2.1 1.3 2.8-.3.5-.5 1.1-.5 1.8 0 1.9 1.5 3.4 3.4 3.6.2 1.2 1.3 2 2.5 2 1 0 1.8-.6 2.2-1.4"/><path d="M14.5 3.5c1.8 0 3 1.3 3 2.9 0 .4-.1.8-.2 1.1 1.4.5 2.2 1.8 2.2 3.3 0 1.1-.5 2.1-1.3 2.8.3.5.5 1.1.5 1.8 0 1.9-1.5 3.4-3.4 3.6-.2 1.2-1.3 2-2.5 2-1 0-1.8-.6-2.2-1.4"/><path d="M12 4v15"/></svg>
-          <h3>Cognition &amp; perception in visualization</h3>
-          <p>How the mind processes, remembers, and sometimes misreads visual data.</p>
+  <!-- RESEARCH -->
+  <section class="section" id="research" aria-labelledby="research-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="sec-label"><b>01</b>Research</p>
+        <div class="sec-head__body">
+          <h2 id="research-h">Six threads, one question.</h2>
+          <p>How do people and AI systems make sense of visual data, and when should we trust what they conclude? Each thread links to the papers behind it.</p>
         </div>
-        <div class="research-card reveal">
-          <svg class="research-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="16" rx="2"/><path d="M7 14v2M12 10v6M17 7v9"/></svg>
+      </header>
+
+      <ol class="threads">
+        <li class="thread">
+          <div class="thread__fig"><svg aria-hidden="true" focusable="false" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid meet"><line x1="36" x2="292" y1="58" y2="58" stroke="#DCCDB9" stroke-dasharray="2 4"/><line x1="36" x2="292" y1="88" y2="88" stroke="#DCCDB9" stroke-dasharray="2 4"/><line x1="36" x2="292" y1="118" y2="118" stroke="#DCCDB9" stroke-dasharray="2 4"/><rect x="52" y="96" width="28" height="52" fill="#D9C4A6"/><rect x="102" y="64" width="28" height="84" fill="#D9C4A6"/><rect x="152" y="108" width="28" height="40" fill="#D9C4A6"/><rect x="202" y="48" width="28" height="100" fill="#6B4A35"/><rect x="252" y="82" width="28" height="66" fill="#D9C4A6"/><line x1="36" x2="292" y1="148" y2="148" stroke="#21160F" stroke-width="1"/><polyline points="66,92 116,60 216,42 166,104 266,80" fill="none" stroke="#B87A40" stroke-width="1.4"/><circle cx="66" cy="92" r="9" fill="#B87A40" fill-opacity=".2" stroke="#B87A40" stroke-width="1.4"/><text x="66" y="79" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8" fill="#6B5A4C">1</text><circle cx="116" cy="60" r="6" fill="#B87A40" fill-opacity=".2" stroke="#B87A40" stroke-width="1.4"/><text x="116" y="50" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8" fill="#6B5A4C">2</text><circle cx="216" cy="42" r="12" fill="#B87A40" fill-opacity=".2" stroke="#B87A40" stroke-width="1.4"/><text x="216" y="26" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8" fill="#6B5A4C">3</text><circle cx="166" cy="104" r="7" fill="#B87A40" fill-opacity=".2" stroke="#B87A40" stroke-width="1.4"/><text x="166" y="93" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8" fill="#6B5A4C">4</text><circle cx="266" cy="80" r="8" fill="#B87A40" fill-opacity=".2" stroke="#B87A40" stroke-width="1.4"/><text x="266" y="68" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8" fill="#6B5A4C">5</text><text x="36" y="168" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8" letter-spacing=".5" fill="#6B5A4C">FIXATIONS 1–5</text></svg></div>
+          <p class="thread__num">01</p>
+          <h3>Cognition &amp; perception</h3>
+          <p class="thread__desc">How the mind processes, remembers, and sometimes misreads visual data, studied with eye-tracking and behavioral experiments.</p>
+          <a class="arrow-link" href="publications.html?topic=literacy">Related papers<span class="sr-only"> on cognition and perception</span> <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </li>
+        <li class="thread">
+          <div class="thread__fig"><svg aria-hidden="true" focusable="false" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid meet"><text x="64" y="30" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8" letter-spacing=".5" fill="#6B5A4C">TEST ITEMS →</text><text x="56" y="55" text-anchor="end" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#6B5A4C">M1</text><rect x="64" y="44" width="14" height="14" fill="#6B4A35"/><rect x="82" y="44" width="14" height="14" fill="#6B4A35"/><rect x="100" y="44" width="14" height="14" fill="#6B4A35"/><rect x="118.5" y="44.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="136" y="44" width="14" height="14" fill="#6B4A35"/><rect x="154" y="44" width="14" height="14" fill="#6B4A35"/><rect x="172" y="44" width="14" height="14" fill="#6B4A35"/><rect x="190" y="44" width="14" height="14" fill="#6B4A35"/><rect x="208.5" y="44.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="226" y="44" width="14" height="14" fill="#6B4A35"/><rect x="244" y="44" width="14" height="14" fill="#6B4A35"/><rect x="262" y="44" width="14" height="14" fill="#6B4A35"/><text x="284" y="55" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#21160F">10/12</text><text x="56" y="82" text-anchor="end" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#6B5A4C">M2</text><rect x="64" y="71" width="14" height="14" fill="#6B4A35"/><rect x="82" y="71" width="14" height="14" fill="#6B4A35"/><rect x="100.5" y="71.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="118" y="71" width="14" height="14" fill="#6B4A35"/><rect x="136" y="71" width="14" height="14" fill="#6B4A35"/><rect x="154.5" y="71.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="172" y="71" width="14" height="14" fill="#6B4A35"/><rect x="190.5" y="71.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="208" y="71" width="14" height="14" fill="#6B4A35"/><rect x="226" y="71" width="14" height="14" fill="#6B4A35"/><rect x="244.5" y="71.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="262" y="71" width="14" height="14" fill="#6B4A35"/><text x="284" y="82" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#21160F">8/12</text><text x="56" y="109" text-anchor="end" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#6B5A4C">M3</text><rect x="64" y="98" width="14" height="14" fill="#6B4A35"/><rect x="82.5" y="98.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="100" y="98" width="14" height="14" fill="#6B4A35"/><rect x="118" y="98" width="14" height="14" fill="#6B4A35"/><rect x="136.5" y="98.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="154.5" y="98.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="172" y="98" width="14" height="14" fill="#6B4A35"/><rect x="190" y="98" width="14" height="14" fill="#6B4A35"/><rect x="208.5" y="98.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="226" y="98" width="14" height="14" fill="#6B4A35"/><rect x="244.5" y="98.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="262.5" y="98.5" width="13" height="13" fill="none" stroke="#BFA98D"/><text x="284" y="109" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#21160F">6/12</text><text x="56" y="136" text-anchor="end" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#6B5A4C">HUM</text><rect x="64" y="125" width="14" height="14" fill="#B87A40"/><rect x="82" y="125" width="14" height="14" fill="#B87A40"/><rect x="100" y="125" width="14" height="14" fill="#B87A40"/><rect x="118" y="125" width="14" height="14" fill="#B87A40"/><rect x="136" y="125" width="14" height="14" fill="#B87A40"/><rect x="154" y="125" width="14" height="14" fill="#B87A40"/><rect x="172.5" y="125.5" width="13" height="13" fill="none" stroke="#BFA98D"/><rect x="190" y="125" width="14" height="14" fill="#B87A40"/><rect x="208" y="125" width="14" height="14" fill="#B87A40"/><rect x="226" y="125" width="14" height="14" fill="#B87A40"/><rect x="244" y="125" width="14" height="14" fill="#B87A40"/><rect x="262" y="125" width="14" height="14" fill="#B87A40"/><text x="284" y="136" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#21160F">11/12</text><line x1="64" x2="278" y1="118.5" y2="118.5" stroke="#DCCDB9"/></svg></div>
+          <p class="thread__num">02</p>
           <h3>Visualization &amp; AI practitioners</h3>
-          <p>Benchmarks, literacy tests, and design guidelines for the people and AI systems that build charts.</p>
-        </div>
-        <div class="research-card reveal">
-          <svg class="research-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="1.8"/><path d="M5 8h14M12 8v5M9 21l3-8 3 8M8 12l-3 3M16 12l3 3"/></svg>
+          <p class="thread__desc">Benchmarks, literacy tests, and design guidelines for the people and AI systems that build and read charts.</p>
+          <a class="arrow-link" href="publications.html?topic=ai">Related papers<span class="sr-only"> on visualization and AI practitioners</span> <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </li>
+        <li class="thread">
+          <div class="thread__fig"><svg aria-hidden="true" focusable="false" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid meet"><rect x="24" y="24" width="40" height="40" fill="#E4D5BF"/><polyline points="29,57 39,44 46,51 52,41 59,57" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="53" cy="34" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="70" y="24" width="40" height="40" fill="#BFA98D"/><polyline points="75,57 89,44 96,51 98,41 105,57" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="99" cy="34" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="116" y="24" width="40" height="40" fill="#D9C4A6"/><polyline points="121,57 130,44 137,51 144,41 151,57" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="145" cy="34" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="162" y="24" width="40" height="40" fill="#D3C0A4"/><polyline points="167,57 180,44 187,51 190,41 197,57" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="191" cy="34" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="158.5" y="20.5" width="47" height="47" fill="none" stroke="#B87A40" stroke-width="1.6" stroke-dasharray="4 3"/><rect x="208" y="24" width="40" height="40" fill="#D9C4A6"/><polyline points="213,57 224,44 231,51 236,41 243,57" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="237" cy="34" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="254" y="24" width="40" height="40" fill="#C9CCD0"/><polyline points="259,57 268,44 275,51 282,41 289,57" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="283" cy="34" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="24" y="70" width="40" height="40" fill="#C9CCD0"/><polyline points="29,103 39,90 46,97 52,87 59,103" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="53" cy="80" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="70" y="70" width="40" height="40" fill="#D9C4A6"/><polyline points="75,103 84,90 91,97 98,87 105,103" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="99" cy="80" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="66.5" y="66.5" width="47" height="47" fill="none" stroke="#B87A40" stroke-width="1.6" stroke-dasharray="4 3"/><rect x="116" y="70" width="40" height="40" fill="#BFA98D"/><polyline points="121,103 133,90 140,97 144,87 151,103" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="145" cy="80" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="162" y="70" width="40" height="40" fill="#D9C4A6"/><polyline points="167,103 177,90 184,97 190,87 197,103" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="191" cy="80" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="208" y="70" width="40" height="40" fill="#D9C4A6"/><polyline points="213,103 226,90 233,97 236,87 243,103" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="237" cy="80" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="254" y="70" width="40" height="40" fill="#BFA98D"/><polyline points="259,103 268,90 275,97 282,87 289,103" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="283" cy="80" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="24" y="116" width="40" height="40" fill="#D3C0A4"/><polyline points="29,149 42,136 49,143 52,133 59,149" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="53" cy="126" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="70" y="116" width="40" height="40" fill="#D9C4A6"/><polyline points="75,149 85,136 92,143 98,133 105,149" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="99" cy="126" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="116" y="116" width="40" height="40" fill="#B7BBC1"/><polyline points="121,149 135,136 142,143 144,133 151,149" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="145" cy="126" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="162" y="116" width="40" height="40" fill="#C9CCD0"/><polyline points="167,149 176,136 183,143 190,133 197,149" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="191" cy="126" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="208" y="116" width="40" height="40" fill="#C9CCD0"/><polyline points="213,149 226,136 233,143 236,133 243,149" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="237" cy="126" r="3" fill="#FFFDF9" fill-opacity=".75"/><rect x="204.5" y="112.5" width="47" height="47" fill="none" stroke="#8F9297" stroke-width="1.6" stroke-dasharray="4 3"/><rect x="254" y="116" width="40" height="40" fill="#BFA98D"/><polyline points="259,149 268,136 275,143 282,133 289,149" fill="none" stroke="#FFFDF9" stroke-opacity=".75" stroke-width="1.6" stroke-linejoin="round"/><circle cx="283" cy="126" r="3" fill="#FFFDF9" fill-opacity=".75"/><circle cx="212" cy="96" r="17" fill="#FFFDF9" fill-opacity=".35" stroke="#21160F" stroke-width="1.6"/><line x1="224" y1="108" x2="236" y2="120" stroke="#21160F" stroke-width="2.4" stroke-linecap="round"/></svg></div>
+          <p class="thread__num">03 <span class="thread__new">New</span></p>
+          <h3>Detecting AI-generated images</h3>
+          <p class="thread__desc">When can we tell real images from generated ones, from everyday photos to chest radiographs, and how often do detectors raise false alarms?</p>
+          <a class="arrow-link" href="publications.html?topic=ai">Related papers<span class="sr-only"> on detecting AI-generated images</span> <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </li>
+        <li class="thread">
+          <div class="thread__fig"><svg aria-hidden="true" focusable="false" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid meet"><circle cx="22" cy="22" r="2.5" fill="#8F9297"/><circle cx="33" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="44" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="55" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="66" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="77" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="88" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="99" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="110" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="121" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="132" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="143" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="154" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="165" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="176" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="187" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="198" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="209" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="220" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="231" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="242" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="253" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="264" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="275" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="286" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="297" cy="22" r="1.4" fill="#DCCDB9"/><circle cx="22" cy="33" r="2.5" fill="#8F9297"/><circle cx="33" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="44" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="55" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="66" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="77" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="88" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="99" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="110" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="121" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="132" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="143" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="154" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="165" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="176" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="187" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="198" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="209" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="220" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="231" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="242" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="253" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="264" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="275" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="286" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="297" cy="33" r="1.4" fill="#DCCDB9"/><circle cx="22" cy="44" r="2.5" fill="#8F9297"/><circle cx="33" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="44" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="55" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="66" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="77" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="88" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="99" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="110" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="121" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="132" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="143" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="154" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="165" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="176" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="187" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="198" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="209" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="220" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="231" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="242" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="253" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="264" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="275" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="286" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="297" cy="44" r="1.4" fill="#DCCDB9"/><circle cx="22" cy="55" r="2.5" fill="#8F9297"/><circle cx="33" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="44" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="55" cy="55" r="3.7" fill="#6B4A35"/><circle cx="66" cy="55" r="3.7" fill="#6B4A35"/><circle cx="77" cy="55" r="3.7" fill="#6B4A35"/><circle cx="88" cy="55" r="3.7" fill="#6B4A35"/><circle cx="99" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="110" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="121" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="132" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="143" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="154" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="165" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="176" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="187" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="198" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="209" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="220" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="231" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="242" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="253" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="264" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="275" cy="55" r="1.4" fill="#DCCDB9"/><circle cx="286" cy="55" r="3.7" fill="#6B4A35"/><circle cx="297" cy="55" r="3.7" fill="#6B4A35"/><circle cx="22" cy="66" r="2.5" fill="#8F9297"/><circle cx="33" cy="66" r="3.7" fill="#6B4A35"/><circle cx="44" cy="66" r="3.7" fill="#6B4A35"/><circle cx="55" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="66" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="77" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="88" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="99" cy="66" r="3.7" fill="#6B4A35"/><circle cx="110" cy="66" r="3.7" fill="#6B4A35"/><circle cx="121" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="132" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="143" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="154" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="165" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="176" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="187" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="198" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="209" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="220" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="231" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="242" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="253" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="264" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="275" cy="66" r="3.7" fill="#6B4A35"/><circle cx="286" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="297" cy="66" r="1.4" fill="#DCCDB9"/><circle cx="22" cy="77" r="2.5" fill="#8F9297"/><circle cx="33" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="44" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="55" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="66" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="77" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="88" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="99" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="110" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="121" cy="77" r="3.7" fill="#6B4A35"/><circle cx="132" cy="77" r="3.7" fill="#6B4A35"/><circle cx="143" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="154" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="165" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="176" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="187" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="198" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="209" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="220" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="231" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="242" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="253" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="264" cy="77" r="3.7" fill="#6B4A35"/><circle cx="275" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="286" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="297" cy="77" r="1.4" fill="#DCCDB9"/><circle cx="22" cy="88" r="2.5" fill="#8F9297"/><circle cx="33" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="44" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="55" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="66" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="77" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="88" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="99" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="110" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="121" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="132" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="143" cy="88" r="3.7" fill="#6B4A35"/><circle cx="154" cy="88" r="3.7" fill="#6B4A35"/><circle cx="165" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="176" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="187" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="198" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="209" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="220" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="231" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="242" cy="88" r="3.7" fill="#6B4A35"/><circle cx="253" cy="88" r="3.7" fill="#6B4A35"/><circle cx="264" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="275" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="286" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="297" cy="88" r="1.4" fill="#DCCDB9"/><circle cx="22" cy="99" r="2.5" fill="#8F9297"/><circle cx="33" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="44" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="55" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="66" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="77" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="88" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="99" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="110" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="121" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="132" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="143" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="154" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="165" cy="99" r="3.7" fill="#6B4A35"/><circle cx="176" cy="99" r="3.7" fill="#6B4A35"/><circle cx="187" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="198" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="209" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="220" cy="99" r="3.7" fill="#6B4A35"/><circle cx="231" cy="99" r="3.7" fill="#6B4A35"/><circle cx="242" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="253" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="264" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="275" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="286" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="297" cy="99" r="1.4" fill="#DCCDB9"/><circle cx="22" cy="110" r="2.5" fill="#8F9297"/><circle cx="33" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="44" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="55" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="66" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="77" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="88" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="99" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="110" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="121" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="132" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="143" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="154" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="165" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="176" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="187" cy="110" r="3.7" fill="#6B4A35"/><circle cx="198" cy="110" r="3.7" fill="#6B4A35"/><circle cx="209" cy="110" r="3.7" fill="#6B4A35"/><circle cx="220" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="231" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="242" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="253" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="264" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="275" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="286" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="297" cy="110" r="1.4" fill="#DCCDB9"/><circle cx="22" cy="121" r="2.5" fill="#8F9297"/><circle cx="33" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="44" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="55" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="66" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="77" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="88" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="99" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="110" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="121" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="132" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="143" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="154" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="165" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="176" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="187" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="198" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="209" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="220" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="231" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="242" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="253" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="264" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="275" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="286" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="297" cy="121" r="1.4" fill="#DCCDB9"/><circle cx="22" cy="132" r="2.5" fill="#8F9297"/><circle cx="33" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="44" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="55" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="66" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="77" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="88" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="99" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="110" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="121" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="132" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="143" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="154" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="165" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="176" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="187" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="198" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="209" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="220" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="231" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="242" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="253" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="264" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="275" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="286" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="297" cy="132" r="1.4" fill="#DCCDB9"/><circle cx="22" cy="143" r="2.5" fill="#8F9297"/><circle cx="33" cy="143" r="2.5" fill="#8F9297"/><circle cx="44" cy="143" r="2.5" fill="#8F9297"/><circle cx="55" cy="143" r="2.5" fill="#8F9297"/><circle cx="66" cy="143" r="2.5" fill="#8F9297"/><circle cx="77" cy="143" r="2.5" fill="#8F9297"/><circle cx="88" cy="143" r="2.5" fill="#8F9297"/><circle cx="99" cy="143" r="2.5" fill="#8F9297"/><circle cx="110" cy="143" r="2.5" fill="#8F9297"/><circle cx="121" cy="143" r="2.5" fill="#8F9297"/><circle cx="132" cy="143" r="2.5" fill="#8F9297"/><circle cx="143" cy="143" r="2.5" fill="#8F9297"/><circle cx="154" cy="143" r="2.5" fill="#8F9297"/><circle cx="165" cy="143" r="2.5" fill="#8F9297"/><circle cx="176" cy="143" r="2.5" fill="#8F9297"/><circle cx="187" cy="143" r="2.5" fill="#8F9297"/><circle cx="198" cy="143" r="2.5" fill="#8F9297"/><circle cx="209" cy="143" r="2.5" fill="#8F9297"/><circle cx="220" cy="143" r="2.5" fill="#8F9297"/><circle cx="231" cy="143" r="2.5" fill="#8F9297"/><circle cx="242" cy="143" r="2.5" fill="#8F9297"/><circle cx="253" cy="143" r="2.5" fill="#8F9297"/><circle cx="264" cy="143" r="2.5" fill="#8F9297"/><circle cx="275" cy="143" r="2.5" fill="#8F9297"/><circle cx="286" cy="143" r="2.5" fill="#8F9297"/><circle cx="297" cy="143" r="2.5" fill="#8F9297"/></svg></div>
+          <p class="thread__num">04</p>
           <h3>BLV &amp; accessibility</h3>
-          <p>Extending visualization literacy and perception research to blind and low-vision users.</p>
-        </div>
-        <div class="research-card reveal">
-          <svg class="research-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3c0 6 12 6 12 12M18 21c0-6-12-6-12-12"/><path d="M7.5 6h9M6.8 9h10.4M6.8 15h10.4M7.5 18h9"/></svg>
+          <p class="thread__desc">Extending visualization literacy and perception research to blind and low-vision readers.</p>
+          <a class="arrow-link arrow-link--muted" href="contact.html">Early stage. Help shape it <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </li>
+        <li class="thread">
+          <div class="thread__fig"><svg aria-hidden="true" focusable="false" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid meet"><polygon points="24,66 24,56.4 30,56.2 36,56.8 42,56.3 48,55.6 54,57.9 60,60.5 66,58.7 72,60 78,61.4 84,58.8 90,58.9 96,57.1 102,57.3 108,56.5 114,58.4 120,57.6 126,55.5 132,55.1 138,53.3 144,51.4 150,52 156,48.4 162,45.2 168,43.6 174,44.1 180,41.5 186,42.3 192,43.1 198,43.8 204,45.4 210,45.4 216,47.6 222,47 228,47.9 234,45.9 240,45 246,47.2 252,49.1 258,50.6 264,48.2 270,48.5 276,47.9 282,48.9 288,48.9 294,49.5 294,66" fill="#D9C4A6"/><polyline points="24,56.4 30,56.2 36,56.8 42,56.3 48,55.6 54,57.9 60,60.5 66,58.7 72,60 78,61.4 84,58.8 90,58.9 96,57.1 102,57.3 108,56.5 114,58.4 120,57.6 126,55.5 132,55.1 138,53.3 144,51.4 150,52 156,48.4 162,45.2 168,43.6 174,44.1 180,41.5 186,42.3 192,43.1 198,43.8 204,45.4 210,45.4 216,47.6 222,47 228,47.9 234,45.9 240,45 246,47.2 252,49.1 258,50.6 264,48.2 270,48.5 276,47.9 282,48.9 288,48.9 294,49.5" fill="none" stroke="#6B4A35" stroke-width="1.4"/><line x1="24" x2="296" y1="66" y2="66" stroke="#21160F"/><line x1="24" x2="296" y1="94" y2="94" stroke="#BFA98D"/><polyline points="36,91.5 39,94 36,96.5" fill="none" stroke="#BFA98D"/><polyline points="56,91.5 59,94 56,96.5" fill="none" stroke="#BFA98D"/><polyline points="76,91.5 79,94 76,96.5" fill="none" stroke="#BFA98D"/><polyline points="96,91.5 99,94 96,96.5" fill="none" stroke="#BFA98D"/><polyline points="116,91.5 119,94 116,96.5" fill="none" stroke="#BFA98D"/><polyline points="136,91.5 139,94 136,96.5" fill="none" stroke="#BFA98D"/><polyline points="156,91.5 159,94 156,96.5" fill="none" stroke="#BFA98D"/><polyline points="176,91.5 179,94 176,96.5" fill="none" stroke="#BFA98D"/><polyline points="196,91.5 199,94 196,96.5" fill="none" stroke="#BFA98D"/><polyline points="216,91.5 219,94 216,96.5" fill="none" stroke="#BFA98D"/><polyline points="236,91.5 239,94 236,96.5" fill="none" stroke="#BFA98D"/><polyline points="256,91.5 259,94 256,96.5" fill="none" stroke="#BFA98D"/><polyline points="276,91.5 279,94 276,96.5" fill="none" stroke="#BFA98D"/><rect x="36" y="88" width="14" height="12" fill="#6B4A35"/><rect x="70" y="88" width="22" height="12" fill="#6B4A35"/><rect x="118" y="88" width="10" height="12" fill="#6B4A35"/><rect x="160" y="88" width="40" height="12" fill="#6B4A35"/><rect x="226" y="88" width="18" height="12" fill="#6B4A35"/><rect x="262" y="88" width="24" height="12" fill="#6B4A35"/><line x1="24" x2="296" y1="120" y2="120" stroke="#BFA98D"/><polyline points="36,117.5 39,120 36,122.5" fill="none" stroke="#BFA98D"/><polyline points="56,117.5 59,120 56,122.5" fill="none" stroke="#BFA98D"/><polyline points="76,117.5 79,120 76,122.5" fill="none" stroke="#BFA98D"/><polyline points="96,117.5 99,120 96,122.5" fill="none" stroke="#BFA98D"/><polyline points="116,117.5 119,120 116,122.5" fill="none" stroke="#BFA98D"/><polyline points="136,117.5 139,120 136,122.5" fill="none" stroke="#BFA98D"/><polyline points="156,117.5 159,120 156,122.5" fill="none" stroke="#BFA98D"/><polyline points="176,117.5 179,120 176,122.5" fill="none" stroke="#BFA98D"/><polyline points="196,117.5 199,120 196,122.5" fill="none" stroke="#BFA98D"/><polyline points="216,117.5 219,120 216,122.5" fill="none" stroke="#BFA98D"/><polyline points="236,117.5 239,120 236,122.5" fill="none" stroke="#BFA98D"/><polyline points="256,117.5 259,120 256,122.5" fill="none" stroke="#BFA98D"/><polyline points="276,117.5 279,120 276,122.5" fill="none" stroke="#BFA98D"/><rect x="52" y="114" width="30" height="12" fill="#6B4A35"/><rect x="110" y="114" width="16" height="12" fill="#6B4A35"/><rect x="168" y="114" width="28" height="12" fill="#6B4A35"/><rect x="240" y="114" width="14" height="12" fill="#6B4A35"/><line x1="24" x2="296" y1="146" y2="146" stroke="#BFA98D"/><polyline points="36,143.5 39,146 36,148.5" fill="none" stroke="#BFA98D"/><polyline points="56,143.5 59,146 56,148.5" fill="none" stroke="#BFA98D"/><polyline points="76,143.5 79,146 76,148.5" fill="none" stroke="#BFA98D"/><polyline points="96,143.5 99,146 96,148.5" fill="none" stroke="#BFA98D"/><polyline points="116,143.5 119,146 116,148.5" fill="none" stroke="#BFA98D"/><polyline points="136,143.5 139,146 136,148.5" fill="none" stroke="#BFA98D"/><polyline points="156,143.5 159,146 156,148.5" fill="none" stroke="#BFA98D"/><polyline points="176,143.5 179,146 176,148.5" fill="none" stroke="#BFA98D"/><polyline points="196,143.5 199,146 196,148.5" fill="none" stroke="#BFA98D"/><polyline points="216,143.5 219,146 216,148.5" fill="none" stroke="#BFA98D"/><polyline points="236,143.5 239,146 236,148.5" fill="none" stroke="#BFA98D"/><polyline points="256,143.5 259,146 256,148.5" fill="none" stroke="#BFA98D"/><polyline points="276,143.5 279,146 276,148.5" fill="none" stroke="#BFA98D"/><rect x="30" y="140" width="12" height="12" fill="#8F9297"/><rect x="88" y="140" width="26" height="12" fill="#8F9297"/><rect x="150" y="140" width="12" height="12" fill="#8F9297"/><rect x="196" y="140" width="34" height="12" fill="#8F9297"/><rect x="270" y="140" width="16" height="12" fill="#8F9297"/><rect x="166" y="16" width="30" height="140" fill="#B87A40" fill-opacity=".12" stroke="#B87A40" stroke-dasharray="3 3"/></svg></div>
+          <p class="thread__num">05</p>
           <h3>Medical &amp; genomic visualization</h3>
-          <p>Visual tools for clinicians and researchers working with complex biomedical data.</p>
-        </div>
-        <div class="research-card reveal">
-          <svg class="research-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4C10 4 4 10 4 18v2h2c8 0 14-6 14-14V4Z"/><path d="M6 20c4-6 8-9 14-14"/></svg>
+          <p class="thread__desc">Visual tools for clinicians and researchers working with complex biomedical data.</p>
+          <a class="arrow-link" href="publications.html?topic=medical">Related papers<span class="sr-only"> on medical and genomic visualization</span> <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </li>
+        <li class="thread">
+          <div class="thread__fig"><svg aria-hidden="true" focusable="false" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid meet"><rect width="320" height="180" fill="#F1E8DA"/><ellipse cx="150" cy="100" rx="150" ry="84" transform="rotate(-14 150 100)" fill="#E5D3B8" stroke="#FFFDF9" stroke-opacity=".6" stroke-width=".8"/><ellipse cx="150" cy="100" rx="114" ry="62" transform="rotate(-14 150 100)" fill="#D6BC97" stroke="#FFFDF9" stroke-opacity=".6" stroke-width=".8"/><ellipse cx="150" cy="100" rx="80" ry="44" transform="rotate(-14 150 100)" fill="#C49C72" stroke="#FFFDF9" stroke-opacity=".6" stroke-width=".8"/><ellipse cx="150" cy="100" rx="50" ry="28" transform="rotate(-14 150 100)" fill="#AE7E52" stroke="#FFFDF9" stroke-opacity=".6" stroke-width=".8"/><ellipse cx="150" cy="100" rx="26" ry="15" transform="rotate(-14 150 100)" fill="#8C5E3A" stroke="#FFFDF9" stroke-opacity=".6" stroke-width=".8"/><ellipse cx="262" cy="50" rx="54" ry="34" transform="rotate(20 262 50)" fill="#E5D3B8" stroke="#FFFDF9" stroke-opacity=".6" stroke-width=".8"/><ellipse cx="262" cy="50" rx="34" ry="22" transform="rotate(20 262 50)" fill="#D6BC97" stroke="#FFFDF9" stroke-opacity=".6" stroke-width=".8"/><ellipse cx="262" cy="50" rx="18" ry="11" transform="rotate(20 262 50)" fill="#C49C72" stroke="#FFFDF9" stroke-opacity=".6" stroke-width=".8"/><rect x="42.5" y="36.5" width="7" height="7" fill="#FFFDF9" stroke="#21160F" stroke-width="1.3"/><rect x="88.5" y="128.5" width="7" height="7" fill="#FFFDF9" stroke="#21160F" stroke-width="1.3"/><rect x="130.5" y="60.5" width="7" height="7" fill="#FFFDF9" stroke="#21160F" stroke-width="1.3"/><rect x="172.5" y="112.5" width="7" height="7" fill="#FFFDF9" stroke="#21160F" stroke-width="1.3"/><rect x="200.5" y="78.5" width="7" height="7" fill="#FFFDF9" stroke="#21160F" stroke-width="1.3"/><rect x="236.5" y="146.5" width="7" height="7" fill="#FFFDF9" stroke="#21160F" stroke-width="1.3"/><rect x="266.5" y="36.5" width="7" height="7" fill="#FFFDF9" stroke="#21160F" stroke-width="1.3"/><rect x="288.5" y="100.5" width="7" height="7" fill="#FFFDF9" stroke="#21160F" stroke-width="1.3"/><rect x="56.5" y="146.5" width="7" height="7" fill="#FFFDF9" stroke="#21160F" stroke-width="1.3"/><rect x="108.5" y="24.5" width="7" height="7" fill="#FFFDF9" stroke="#21160F" stroke-width="1.3"/><text x="16" y="170" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8" letter-spacing=".5" fill="#21160F">PM2.5 · SCHOOL SITES</text></svg></div>
+          <p class="thread__num">06</p>
           <h3>Environment &amp; data science</h3>
-          <p>Applying visualization and interpolation methods to environmental and public-health data.</p>
+          <p class="thread__desc">Visualization and interpolation methods for environmental and public-health data, like air quality at public schools.</p>
+          <a class="arrow-link" href="publications.html?topic=environment">Related papers<span class="sr-only"> on environment and data science</span> <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TRY IT -->
+  <section class="section demo on-dark" id="try" aria-labelledby="demo-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="sec-label"><b>02</b>Try it</p>
+        <div class="sec-head__body">
+          <h2 id="demo-h">How much bigger is B?</h2>
+          <p>A thirty-second taste of what we study. Estimate how many times larger circle B's area is than circle A's, then see the same comparison drawn as bars.</p>
+        </div>
+      </header>
+
+      <div class="demo__grid">
+        <div class="demo__stage">
+          <svg id="demo-svg" viewBox="0 0 560 330" role="img" aria-labelledby="demo-svg-title">
+            <title id="demo-svg-title">Two circles. Circle A is small and grey; circle B is larger and amber. After you check your estimate, two bars show the same ratio as lengths.</title>
+            <g font-family="IBM Plex Mono, ui-monospace, monospace" font-size="17" fill="#C4B4A1">
+              <circle cx="140" cy="120" r="30" fill="#8F9297"/>
+              <text x="140" y="222" text-anchor="middle">A</text>
+              <circle id="demo-b" cx="370" cy="120" r="67" fill="#E3AC6D"/>
+              <text x="370" y="222" text-anchor="middle">B</text>
+              <g id="demo-bars" class="demo__bars">
+                <line x1="60" x2="520" y1="244" y2="244" stroke="#F3EADD" stroke-opacity=".18"/>
+                <text x="46" y="270" text-anchor="end">A</text>
+                <rect x="60" y="258" width="60" height="16" fill="#8F9297"/>
+                <text x="46" y="300" text-anchor="end">B</text>
+                <rect id="demo-bar-b" x="60" y="288" width="300" height="16" fill="#E3AC6D"/>
+                <text id="demo-bar-label" x="370" y="301" fill="#E3AC6D">5×</text>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <div class="demo__controls">
+          <label for="demo-guess">Your estimate: B's area is</label>
+          <output id="demo-out" for="demo-guess">2× A's</output>
+          <input type="range" id="demo-guess" min="1" max="10" step="0.5" value="2" aria-valuetext="2 times A's area">
+          <div class="demo__scale" aria-hidden="true"><span>1× (same)</span><span>10×</span></div>
+          <button type="button" class="btn btn--light" id="demo-check">Check my estimate</button>
+          <p class="demo__result" id="demo-result" aria-live="polite"></p>
+          <p class="demo__nojs">This short demo needs JavaScript. The idea behind it: people tend to underestimate differences in area, which is why lengths and positions usually make clearer charts.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- COLLABORATION CALLOUT -->
-  <section class="tight">
-    <div class="container">
-      <div class="callout reveal">
-        <div class="callout__text">
-          <h2>Let's brew something together.</h2>
-          <p>I'm actively looking to collaborate — on visualization literacy, trust, aesthetics, human-AI teaming, or applications in accessibility, medicine, or environmental science. If any of this overlaps with your work, I'd love to hear from you.</p>
+  <!-- NEWS -->
+  <section class="section" id="news" aria-labelledby="news-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="sec-label"><b>03</b>News</p>
+        <div class="sec-head__body">
+          <h2 id="news-h">From the lab, and on air.</h2>
         </div>
-        <a href="contact.html" class="btn btn--primary">
-          Start a conversation
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
+      </header>
+
+      <article class="feature" aria-labelledby="feature-h">
+        <div class="video">
+          <a class="video__facade" href="https://www.youtube.com/watch?v=P7-hsIM-CiY" target="_blank" rel="noopener" data-youtube-id="P7-hsIM-CiY" data-title="AI agent at your service: Is this new tech right for you? (WSPA 7News)">
+            <img src="assets/images/wspa-ai-agents.jpg" alt="" width="480" height="270" loading="lazy">
+            <span class="video__play"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5L7 4.5Z"/></svg>Play the segment</span>
+            <span class="sr-only">: AI agent at your service, WSPA 7News</span>
+          </a>
+        </div>
+        <div>
+          <p class="feature__meta">In the news · WSPA 7News · <time datetime="2026-11-10">Nov 10, 2026</time></p>
+          <h3 id="feature-h">AI agent at your service: Is this new tech right for you?</h3>
+          <p>Dr. Pandey sat down with WSPA 7News to talk about AI agents built for everyday consumers: what they can do on your behalf, and the privacy concerns worth weighing before you hand one the keys.</p>
+          <div class="feature__links">
+            <a class="arrow-link" href="https://www.wspa.com/news/consumer/ai-agent-at-your-service-is-this-new-tech-right-for-you/" target="_blank" rel="noopener">Read the story <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="arrow-link" href="https://www.youtube.com/watch?v=P7-hsIM-CiY" target="_blank" rel="noopener">Watch on YouTube <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <div class="notes">
+        <h3 class="sec-label">Lab notes</h3>
+        <ol>
+          <li>
+            <time datetime="2026-08">Fall 2026</time>
+            <p>MOCHA Lab opens in Furman's Department of Computer Science. <a href="#join">We're recruiting undergraduate researchers.</a></p>
+            <span class="kind">Lab</span>
+          </li>
+          <li>
+            <time datetime="2025-11">Nov 2025</time>
+            <p>Estimating PM<sub>2.5</sub> at North Carolina public schools, out in <a href="https://doi.org/10.1038/s41598-025-26539-3" target="_blank" rel="noopener">Scientific Reports</a>.</p>
+            <span class="kind">Published</span>
+          </li>
+          <li>
+            <time datetime="2025-11">Nov 2025</time>
+            <p><a href="https://doi.org/10.1109/viscomm69388.2025.00009" target="_blank" rel="noopener">Visualization Literacy or Skillset?</a> presented at the IEEE VIS Workshop on Visualization for Communication.</p>
+            <span class="kind">Published</span>
+          </li>
+          <li>
+            <time datetime="2025-04">Apr 2025</time>
+            <p><a href="https://doi.org/10.1145/3706598.3713824" target="_blank" rel="noopener">Trustworthy by Design</a>, on the viewer’s perspective on trust in data visualization, at ACM CHI 2025.</p>
+            <span class="kind">Published</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section class="section section--tint" id="join" aria-labelledby="join-h">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="sec-label"><b>04</b>Join</p>
+        <div class="sec-head__body">
+          <h2 id="join-h">Pull up a chair.</h2>
+          <p>The lab is new, so the first students and collaborators will help shape what it becomes.</p>
+        </div>
+      </header>
+      <div class="join">
+        <div class="join__col">
+          <h3>Furman undergraduates</h3>
+          <p>I'm actively recruiting undergraduate researchers interested in visualization, perception, human-AI interaction, AI/LLMs, and understanding how machines think. Email me with the subject line <code>Interested in brewing together at MOCHA lab</code>.</p>
+          <div class="join__actions">
+            <a class="btn btn--solid" href="mailto:spandey2@furman.edu?subject=Interested%20in%20brewing%20together%20at%20MOCHA%20lab">Email Dr. Pandey <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+        <div class="join__col">
+          <h3>Collaborators</h3>
+          <p>Working on visualization literacy, trust, aesthetics, human-AI teaming, or applications in accessibility, medicine, or environmental science? I'd love to hear from you.</p>
+          <div class="join__actions">
+            <a class="btn btn--line" href="contact.html">Start a conversation</a>
+            <a class="arrow-link" href="https://calendly.com/mangosaugat/meeting-with-dr-saugat-pandey" target="_blank" rel="noopener">Book a 1:1 <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/images/mocha-logo.png" alt="">
-        MOCHA Lab
+<footer class="site-footer on-dark">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-about">
+        <p class="footer-mark">MOCHA Lab</p>
+        <p>Multi-agent, Observational, Cognitive, Human-AI &amp; Aesthetics Lab.</p>
       </div>
-      <nav class="footer-links">
+      <nav class="footer-col" aria-label="Footer">
+        <p class="footer-h">Explore</p>
         <a href="index.html">Home</a>
         <a href="people.html">People</a>
         <a href="publications.html">Publications</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="footer-col">
+        <p class="footer-h">Connect</p>
+        <a href="mailto:spandey2@furman.edu">spandey2@furman.edu</a>
+        <a href="https://scholar.google.com/citations?user=RCC_DfYAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/iamsaugatpandey" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://calendly.com/mangosaugat/meeting-with-dr-saugat-pandey" target="_blank" rel="noopener">Book a 1:1</a>
+      </div>
+      <div class="footer-col">
+        <p class="footer-h">Find us</p>
+        <address>Department of Computer Science<br>Furman University<br>Greenville, SC</address>
+        <a href="https://www.furman.edu/" target="_blank" rel="noopener">furman.edu</a>
+      </div>
     </div>
-    <p class="footer-note">© 2026 MOCHA Lab · Department of Computer Science, Furman University</p>
+    <div class="footer-bottom">
+      <span>© 2026 MOCHA Lab</span>
+      <span>Brewed at Furman University</span>
+    </div>
   </div>
 </footer>
 

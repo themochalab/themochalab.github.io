@@ -753,6 +753,51 @@ h3 { font-size: 1.4rem; line-height: 1.2; }
 .collab h3 a:hover { text-decoration: underline; text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
 .collab p { margin: 0; color: var(--ink-2); }
 
+/* People: mentees ("then -> now" rows) */
+
+.mentees { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+
+.mentee {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+  gap: 10px 40px;
+  align-items: baseline;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.mentee__name { font-size: 1.45rem; margin: 0; }
+.mentee__name a { color: var(--ink); text-decoration: none; }
+.mentee__name a:hover { text-decoration: underline; text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+.mentee__ext {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--brown);
+  margin-left: 10px;
+  white-space: nowrap;
+  vertical-align: 0.2em;
+}
+
+.mentee__path {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 40px;
+  margin: 0;
+}
+.mentee__path dt {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.mentee__path dd { margin: 0; color: var(--ink-2); font-size: 0.98rem; }
+.mentee__now dt { color: var(--brown); }
+.mentee__now dt::before { content: "→ "; }
+.mentee__now dd { color: var(--ink); }
+
 /* ==========================================================================
    Publications
    ========================================================================== */
@@ -1092,9 +1137,15 @@ h3 { font-size: 1.4rem; line-height: 1.2; }
 
   .lines li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
 
+  .mentee { grid-template-columns: minmax(0, 1fr); padding: 20px 0; }
+
   .video__play { left: 12px; top: 12px; }
 
   .footer-top { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+}
+
+@media (max-width: 480px) {
+  .mentee__path { grid-template-columns: minmax(0, 1fr); gap: 12px; }
 }
 
 @media (max-width: 360px) {
